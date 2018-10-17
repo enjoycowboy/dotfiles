@@ -298,8 +298,11 @@ exec_always --no-startup-id ~/.local/bin/wallpaper.sh
 exec --no-startup-id redshift
 exec_always --no-startup-id xfce4-power-manager
 exec --no-startup-id insync start
-exec_always --no-startup-id rclone --vfs-cache-mode writes mount gdrive: ~/gdrive
-exec_always --no-startup-id rclone --vfs-cache-mode writes mount rtmoranPC: ~/rtmoranPC
+
+# exec_always --no-startup-id rclone --vfs-cache-mode writes mount gdrive: ~/gdrive
+# exec_always --no-startup-id rclone --vfs-cache-mode writes mount rtmoranPC: ~/rtmoranPC
+exec_always --no-startup-id rclone mount gdrive: ~/gdrive
+exec_always --no-startup-id rclone mount rtmoranPC: ~/rtmoranPC
 
 
 # Color palette used for the terminal ( ~/.Xresources file )
