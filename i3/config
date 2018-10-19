@@ -20,7 +20,7 @@ bindsym $mod+y border pixel 1
 bindsym $mod+n border normal
 
 # Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below.
+# is used in the bar {}lock below.
 font xft:URWGothic-Book 11
 
 # Use Mouse+$mod to drag floating windows
@@ -34,8 +34,8 @@ bindsym $mod+Return exec terminal
 bindsym $mod+x kill
 
 # start program launcher
-# bindsym $mod+d exec --no-startup-id dmenu_recency
-bindsym $mod+a exec --no-startup-id rofi -show run -lines 20
+bindsym $mod+a exec --no-startup-id dmenu_recency
+# bindsym $mod+a exec --no-startup-id rofi -show run -lines 1 
 
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -143,7 +143,7 @@ bindsym $mod+Ctrl+Left workspace prev
 # to display names or symbols instead of plain workspace numbers you can use
 # something like: set $ws1 1:mail
 #                 set $ws2 2:
-set $ws1 Home
+set $ws1 one
 set $ws2 two
 set $ws3 three
 set $ws4 four
@@ -298,6 +298,7 @@ exec_always --no-startup-id ~/.local/bin/wallpaper.sh
 exec --no-startup-id redshift
 exec_always --no-startup-id xfce4-power-manager
 exec --no-startup-id insync start
+exec --no-startup-id nohup davmail .davmail.properties
 
 # exec_always --no-startup-id rclone --vfs-cache-mode writes mount gdrive: ~/gdrive
 # exec_always --no-startup-id rclone --vfs-cache-mode writes mount rtmoranPC: ~/rtmoranPC

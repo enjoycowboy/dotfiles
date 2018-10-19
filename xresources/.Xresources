@@ -54,7 +54,7 @@ XTerm*selectToClipboard: true
 *color7:                          #a8a19f
 *color15:                         #f1efee
 
-Xcursor.theme: xcursor-breeze
+Xcursor.theme: Adwaita
 Xcursor.size:                     0
 
 URxvt.font:                       xft:DejaVu Sans Mono for Powerline:style=Book:antialias=true:size=12
