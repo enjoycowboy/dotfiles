@@ -1,5 +1,4 @@
 # rtmoran.org
-#
 A personal respository for configuration files and current projects that others
 might be interested in.
 
