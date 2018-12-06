@@ -54,6 +54,6 @@ monitor-sensor \
 		xinput set-prop "$TOUCHSCREENp" --type=float "Coordinate Transformation Matrix" $matrix
 		xinput set-prop "$TOUCHSCREENe" --type=float "Coordinate Transformation Matrix" $matrix
 		xinput set-prop "$TOUCHSCREENf" --type=float "Coordinate Transformation Matrix" $matrix
-            $keyboard "onboard"
+               $keyboard "onboard"
 done
 
