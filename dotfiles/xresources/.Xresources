@@ -14,50 +14,89 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-*background:                      #1b1918
-*foreground:                      #00cc00
-*fading:                          8
-*fadeColor:                       black
+*fading:                          4
 *cursorColor:                     magenta
 *pointerColorBackground:          #2B2C2B
 *pointerColorForeground:          #75aeff
 
+! NORD Color Scheme
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+*.foreground:   nord4
+*.background:   nord0
+*fading: 20
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
+
 !! black dark/light
-*color0:                          #1b1918
-*color8:                          #766e6b
+!*color0:                          #1b1918
+!*color8:                          #766e6b
 
 !! red dark/light
-*color1:                          #f22c40
-*color9:                          #f22c40
+!*color1:                          #f22c40
+!*color9:                          #f22c40
 
 !! green dark/light
-*color2:                          #5ab738
-*color10:                         #5ab738
+!*color2:                          #5ab738
+!*color10:                         #5ab738
 
 !! yellow dark/light
-*color3:                          #d5911a
-*color11:                         #d5911a
+!*color3:                          #d5911a
+!*color11:                         #d5911a
 
 !! blue dark/light
-*color4:                          #407ee7
-*color12:                         #407ee7
+!*color4:                          #407ee7
+!*color12:                         #407ee7
 
 !! magenta dark/light
-*color5:                          #6666ea
-*color13:                         #6666ea
+!*color5:                          #6666ea
+!*color13:                         #6666ea
 
 !! cyan dark/light
-*color6:                          #00ad9c
-*color14:                         #00ad9c
+!*color6:                          #00ad9c
+!*color14:                         #00ad9c
 
 !! white dark/light
-*color7:                          #a8a19f
-*color15:                         #f1efee
+!*color7:                          #a8a19f
+!*color15:                         #f1efee
 
 Xcursor.theme: Adwaita
 Xcursor.size:                     0
 
 URxvt.font:                       xft:DejaVu Sans Mono for Powerline:style=Book:antialias=true:size=12
+!URxvt.bold.font:		  xft:DejaVu Sans Mono for Powerline:style=Bold:antialias=true:size=12
+! URxvt.font:			   xft:Hack:style=Regular:antialias=true:size=12
 
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
@@ -65,7 +104,7 @@ URxvt.font:                       xft:DejaVu Sans Mono for Powerline:style=Book:
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [75]#000000
+URxvt.background:                 [70]#000000
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
@@ -73,6 +112,8 @@ URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 URxvt*cursorColor:		  magenta
 URxvt*colorUL:			  #4692B4
+!URxvt*blurRadius:                 1x65
+!URxvt*transparency:		  true
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
 ! URxvt*inheritPixmap:            true
@@ -236,15 +277,16 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! -xos4-terminus-bold-r-normal--28-280-72-72-c-140-iso10646-1
 ! -xos4-terminus-bold-r-normal--32-320-72-72-c-160-iso10646-1
 !
-rofi.color-enabled:	true
-rofi.color-window:	#000, #000, #000
-rofi.color-normal:	#111, #819396, #222, #008ed4, #ffffff
-rofi.color-active:	#002b37, #008ed4, #003643, #008ed4, #66c6ff
-rofi.color-urgent:	#002b37, #da4281, #003643, #008ed4, #890661
+rofi.color-enabled: true
+rofi.color-window: argb:cc2f343f, argb:cc2f343f, argb:cc2f343f
+rofi.color-normal: argb:002f343f, #d8dee8, argb:002f343f, argb:002f343f, #bf616a
+rofi.color-active: #2f343f, #b48ead, #2f343f, #2f343f, #93e5cc
+rofi.color-urgent: #2f343f, #ebcb8b, #2f343f, #2f343f, #ebcb8b
 
-rofi.fake-transparency:	true
-rofi.lines:		3
-rofi.bw:		0
-rofi.opacity:		10
-rofi.hide-scrollbar:	true
-rofi.width:		30
+rofi.lines: 5
+rofi.eh: 2
+rofi.padding: 200
+rofi.fullscreen: true
+rofi.bw: 0
+rofi.separator-style: none
+rofi.hide-scrollbar: true
