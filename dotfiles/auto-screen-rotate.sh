@@ -21,8 +21,6 @@ TOUCHSCREENp='Wacom HID 5110 Pen'
 TOUCHSCREENe='Wacom HID 5110 Pen'
 TOUCHSCREENf='Wacom HID 5110 Finger'
 
-killall onboard
-
 monitor-sensor \
 	| grep --line-buffered "Accelerometer orientation changed" \
 	| grep --line-buffered -o ": .*" \
@@ -31,19 +29,19 @@ monitor-sensor \
 		if [ "$line" = "normal" ]; then
 			rotate=normal
 			matrix="0 0 0 0 0 0 0 0 0"
-         keyboard=killall
+               keyboard=killall
  		elif [ "$line" = "left-up" ]; then
 			rotate=left
 			matrix="0 -1 1 1 0 0 0 0 1"
-         keyboard=exec
+               keyboard=exec
 		elif [ "$line" = "right-up" ]; then
 			rotate=right
 			matrix="0 1 0 -1 0 1 0 0 1"
-         keyboard=exec
+               keyboard=exec
 		elif [ "$line" = "bottom-up" ]; then
 			rotate=inverted
 			matrix="-1 0 1 0 -1 1 0 0 1"
-         keyboard=exec
+               keyboard=exec
 		else
 			echo "Unknown rotation: $line"
 			continue
