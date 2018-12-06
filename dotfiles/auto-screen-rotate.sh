@@ -49,13 +49,11 @@ monitor-sensor \
 			continue
 		fi
 
-      echo $keyboard
 		echo $rotate
 		xrandr --output "$MONITOR" --rotate "$rotate"
 		xinput set-prop "$TOUCHSCREENp" --type=float "Coordinate Transformation Matrix" $matrix
 		xinput set-prop "$TOUCHSCREENe" --type=float "Coordinate Transformation Matrix" $matrix
 		xinput set-prop "$TOUCHSCREENf" --type=float "Coordinate Transformation Matrix" $matrix
-
-      $keyboard "onboard"
+            $keyboard "onboard"
 done
 
