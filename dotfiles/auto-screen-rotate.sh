@@ -21,27 +21,25 @@ TOUCHSCREENp='Wacom HID 5110 Pen'
 TOUCHSCREENe='Wacom HID 5110 Pen'
 TOUCHSCREENf='Wacom HID 5110 Finger'
 
-monitor-sensor \
-	| grep --line-buffered "Accelerometer orientation changed" \
-	| grep --line-buffered -o ": .*" \
-	| while read -r line; do
+listen() {
+	onboard_pid=
+
+	while read -r line; do
 		line="${line#??}"
+		show_keyboard=1
 		if [ "$line" = "normal" ]; then
 			rotate=normal
 			matrix="0 0 0 0 0 0 0 0 0"
-                       keyboard=killall
+			show_keyboard=0
  		elif [ "$line" = "left-up" ]; then
 			rotate=left
 			matrix="0 -1 1 1 0 0 0 0 1"
-                       keyboard=exec
 		elif [ "$line" = "right-up" ]; then
 			rotate=right
 			matrix="0 1 0 -1 0 1 0 0 1"
-                       keyboard=exec
 		elif [ "$line" = "bottom-up" ]; then
 			rotate=inverted
 			matrix="-1 0 1 0 -1 1 0 0 1"
-                       keyboard=exec
 		else
 			echo "Unknown rotation: $line"
 			continue
@@ -52,6 +50,17 @@ monitor-sensor \
 		xinput set-prop "$TOUCHSCREENp" --type=float "Coordinate Transformation Matrix" $matrix
 		xinput set-prop "$TOUCHSCREENe" --type=float "Coordinate Transformation Matrix" $matrix
 		xinput set-prop "$TOUCHSCREENf" --type=float "Coordinate Transformation Matrix" $matrix
-               $keyboard "onboard"
-done
 
+		if [ "$show_keyboard" = 1 ] && [ -z "$onboard_pid" ]; then
+			onboard &
+			onboard_pid=$!
+		elif [ "$show_keyboard" = 0 ] && ! [ -z "$onboard_pid" ]; then
+			kill "$onboard_pid"
+			onboard_pid=
+		fi
+	done
+}
+
+monitor-sensor \
+	| grep --line-buffered "Accelerometer orientation changed" \
+	| grep --line-buffered -o ": .*" | listen
