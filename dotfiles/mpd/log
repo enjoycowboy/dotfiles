@@ -1,0 +1,287 @@
+Dec 09 23:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 09 23:43 : update: added /01 - Gloria's Step (take 2).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/05 - All of You (take 2).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/01 - Gloria's Step (take 2).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/03 - Solar.mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/02 - My Man's Gone Now.mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/04 - Alice in Wonderland (take 2).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3
+Dec 09 23:43 : update: added Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3
+Dec 09 23:43 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 09 23:44 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 09 23:44 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 10:15 : zeroconf: No global port, disabling zeroconf
+Dec 10 11:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:02 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:06 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:06 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:07 : zeroconf: No global port, disabling zeroconf
+Dec 10 11:08 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:08 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:15 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:20 : zeroconf: No global port, disabling zeroconf
+Dec 10 11:20 : client: [0] opened from local
+Dec 10 11:20 : client: [0] closed
+Dec 10 11:20 : client: [1] opened from local
+Dec 10 11:20 : client: [1] closed
+Dec 10 11:21 : client: [0] opened from 127.0.0.1:40836
+Dec 10 11:21 : client: [0] closed
+Dec 10 11:23 : client: [1] opened from 127.0.0.1:40872
+Dec 10 11:24 : client: [2] opened from local
+Dec 10 11:24 : client: [2] closed
+Dec 10 11:24 : client: [3] opened from local
+Dec 10 11:24 : client: [3] closed
+Dec 10 11:24 : client: [4] opened from local
+Dec 10 11:24 : client: [4] closed
+Dec 10 11:24 : client: [2] opened from 127.0.0.1:40932
+Dec 10 11:24 : client: [2] closed
+Dec 10 11:26 : client: [5] opened from [::1]:49442
+Dec 10 11:26 : client: [5] closed
+Dec 10 11:28 : avahi: Client Disconnected, will reconnect shortly
+Dec 10 11:28 : zeroconf: No global port, disabling zeroconf
+Dec 10 11:29 : client: [0] opened from [::1]:54586
+Dec 10 11:29 : client: [0] closed
+Dec 10 11:29 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:29 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:29 : client: [1] opened from [::1]:54600
+Dec 10 11:30 : client: [1] closed
+Dec 10 11:30 : client: [2] opened from local
+Dec 10 11:30 : client: [2] closed
+Dec 10 11:30 : client: [3] opened from local
+Dec 10 11:30 : client: [3] closed
+Dec 10 11:30 : client: [4] opened from [::1]:54606
+Dec 10 11:30 : client: [4] closed
+Dec 10 11:30 : client: [5] opened from local
+Dec 10 11:30 : client: [5] closed
+Dec 10 11:30 : client: [6] opened from [::1]:54610
+Dec 10 11:30 : client: [6] closed
+Dec 10 11:30 : zeroconf: No global port, disabling zeroconf
+Dec 10 11:30 : client: [0] opened from [::1]:54614
+Dec 10 11:31 : client: [0] closed
+Dec 10 11:31 : client: [1] opened from local
+Dec 10 11:31 : client: [1] closed
+Dec 10 11:31 : client: [2] opened from local
+Dec 10 11:31 : client: [2] closed
+Dec 10 11:31 : client: [3] opened from [::1]:54616
+Dec 10 11:32 : client: [3] closed
+Dec 10 11:36 : exception: Failed to play on "pulse audio" (pulse): suspended
+Dec 10 11:36 : client: [4] opened from [::1]:54648
+Dec 10 11:37 : client: [4] closed
+Dec 10 11:39 : player: played "Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3"
+Dec 10 11:40 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:40 : player: played "Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3"
+Dec 10 11:41 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:41 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 11:41 : client: [0] opened from 127.0.0.1:59946
+Dec 10 11:41 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 11:41 : client: [0] closed
+Dec 10 11:41 : client: [1] opened from 127.0.0.1:59950
+Dec 10 11:41 : client: [1] closed
+Dec 10 11:49 : player: played "Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3"
+Dec 10 11:53 : player: played "Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3"
+Dec 10 11:58 : client: [2] opened from 127.0.0.1:60068
+Dec 10 11:58 : client: [2] closed
+Dec 10 12:01 : exception: Failed to play on "pulse audio" (pulse): suspended
+Dec 10 12:01 : client: [3] opened from 127.0.0.1:60130
+Dec 10 12:01 : client: [3] closed
+Dec 10 12:02 : player: played "Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3"
+Dec 10 12:02 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 12:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 12:02 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:02 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:02 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:02 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 12:02 : client: [0] opened from 127.0.0.1:60152
+Dec 10 12:02 : exception: Failed to read mixer for 'ALSA sound card': no such mixer control: PCM
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:02 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:02 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:02 : client: [0] closed
+Dec 10 12:02 : client: [1] opened from 127.0.0.1:60156
+Dec 10 12:02 : client: [1] closed
+Dec 10 12:02 : exception: Failed to play on "pulse audio" (pulse): suspended
+Dec 10 12:02 : exception: Failed to open audio output
+Dec 10 12:13 : client: [2] opened from 127.0.0.1:60184
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:13 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:13 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:13 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:13 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:13 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:13 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:13 : avahi: Client Disconnected, will reconnect shortly
+Dec 10 12:13 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Dec 10 12:13 : exception: Failed to open audio output
+Dec 10 12:13 : player: played "Bill Evans - Sunday At The Village Vanguard/02 - My Man's Gone Now.mp3"
+Dec 10 12:15 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 12:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 12:15 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Dec 10 12:15 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 12:16 : client: [0] opened from 127.0.0.1:60056
+Dec 10 12:16 : exception: Failed to read mixer for 'ALSA sound card': no such mixer control: PCM
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:16 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:16 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:16 : client: [0] closed
+Dec 10 12:16 : client: [1] opened from 127.0.0.1:60062
+Dec 10 12:16 : client: [1] closed
+Dec 10 12:23 : player: played "Bill Evans - Sunday At The Village Vanguard/02 - My Man's Gone Now.mp3"
+Dec 10 12:37 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 12:37 : client: [0] opened from 127.0.0.1:60504
+Dec 10 12:37 : exception: Failed to read mixer for 'ALSA sound card': no such mixer control: PCM
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:37 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:37 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:38 : client: [0] closed
+Dec 10 12:39 : client: [1] opened from 127.0.0.1:60546
+Dec 10 12:40 : player: played "Bill Evans - Sunday At The Village Vanguard/01 - Gloria's Step (take 2).mp3"
+Dec 10 12:40 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 12:40 : client: [0] opened from 127.0.0.1:60590
+Dec 10 12:40 : update: removing 01 - Gloria's Step (take 2).mp3
+Dec 10 12:43 : client: [0] closed
+Dec 10 12:43 : client: [1] opened from 127.0.0.1:60646
+Dec 10 12:49 : client: [1] closed
+Dec 10 12:49 : client: [2] opened from 127.0.0.1:60784
+Dec 10 12:49 : client: [2] closed
+Dec 10 12:50 : client: [3] opened from 127.0.0.1:60788
+Dec 10 12:54 : player: played "Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3"
+Dec 10 12:54 : client: [0] opened from 127.0.0.1:60906
+Dec 10 12:54 : exception: Failed to read mixer for 'ALSA sound card': no such mixer control: PCM
+Dec 10 12:54 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 12:55 : client: [0] closed
+Dec 10 12:55 : client: [1] opened from 127.0.0.1:60910
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:55 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:55 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:56 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:56 : exception: nested: Failed to open ALSA device "default": No such file or directory
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:56 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:56 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:56 : client: [1] closed
+Dec 10 12:56 : client: [2] opened from 127.0.0.1:60914
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:56 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:56 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:56 : player: played "Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3"
+Dec 10 12:56 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Dec 10 12:56 : client: [0] opened from 127.0.0.1:60930
+Dec 10 12:56 : exception: Failed to read mixer for 'ALSA sound card': no such mixer control: PCM
+Dec 10 12:56 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 12:56 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 12:56 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 12:57 : exception: Failed to open audio output
+Dec 10 12:57 : client: [0] closed
+Dec 10 12:58 : client: [1] opened from 127.0.0.1:60966
+Dec 10 12:58 : exception: Failed to open audio output
+Dec 10 12:58 : client: [1] closed
+Dec 10 12:58 : client: [2] opened from 127.0.0.1:60984
+Dec 10 13:02 : player: played "Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3"
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 13:02 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 13:02 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 13:08 : player: played "Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3"
+ALSA lib pcm_hw.c:1822:(_snd_pcm_hw_open) Invalid value for card
+Dec 10 13:08 : exception: Failed to open "ALSA sound card" (alsa)
+Dec 10 13:08 : exception: nested: Failed to open ALSA device "default": No such file or directory
+Dec 10 13:09 : player: played "Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3"
+Dec 10 13:09 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Dec 10 13:09 : client: [0] opened from 127.0.0.1:32918
+Dec 10 13:09 : avahi: Service 'Music Player @ manjaro-pc' successfully established.
+Dec 10 13:16 : player: played "Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3"
+Dec 10 13:16 : client: [0] closed
+Dec 10 14:21 : client: [1] opened from 127.0.0.1:33018
+Dec 10 14:22 : player: played "Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3"
+Dec 10 14:26 : exception: Failed to play on "pulse audio" (pulse): suspended
+Dec 10 14:27 : client: [1] closed
+Dec 10 14:32 : avahi: Client Disconnected, will reconnect shortly
+Dec 10 14:32 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 14:32 : zeroconf: No global port, disabling zeroconf
+Dec 10 15:12 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 15:14 : zeroconf: No global port, disabling zeroconf
+Dec 10 15:16 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 15:21 : zeroconf: No global port, disabling zeroconf
+Dec 10 15:24 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 15:37 : zeroconf: No global port, disabling zeroconf
+Dec 10 15:52 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 15:52 : zeroconf: No global port, disabling zeroconf
+Dec 10 15:52 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 15:52 : zeroconf: No global port, disabling zeroconf
+Dec 10 15:59 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 10 16:10 : zeroconf: No global port, disabling zeroconf
+Dec 10 22:28 : client: [0] opened from [::1]:49014
+Dec 10 22:28 : client: [0] closed
+Dec 10 22:35 : player: played "Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3"
+Dec 11 11:44 : player: played "Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3"
+Dec 11 11:52 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 11 12:00 : player: played "Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3"
+Dec 11 12:04 : player: played "Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3"
+Dec 11 13:15 : client: [1] opened from [::1]:50576
+Dec 11 13:16 : client: [1] closed
+Dec 11 13:24 : player: played "Bill Evans - Sunday At The Village Vanguard/04 - Alice in Wonderland (take 2).mp3"
+Dec 11 13:32 : player: played "Bill Evans - Sunday At The Village Vanguard/05 - All of You (take 2).mp3"
+Dec 11 13:36 : player: played "Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3"
+Dec 11 13:43 : player: played "Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3"
+Dec 11 13:43 : player: played "Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3"
+Dec 11 13:43 : exception: Failed to play on "pulse audio" (pulse): disconnected
+Dec 11 13:43 : zeroconf: No global port, disabling zeroconf
+Dec 11 13:56 : client: [0] opened from [::1]:51994
+Dec 11 14:00 : player: played "Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3"
+Dec 11 14:02 : client: [0] closed
+Dec 11 14:07 : player: played "Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3"
+Dec 11 14:14 : player: played "Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3"
+Dec 11 14:22 : player: played "Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3"
+Dec 11 14:30 : player: played "Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3"
+Dec 11 14:34 : player: played "Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3"
+Dec 11 16:19 : zeroconf: No global port, disabling zeroconf
+Dec 11 17:59 : client: [0] opened from [::1]:36422
+Dec 11 18:00 : player: played "Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3"
+Dec 11 18:00 : client: [0] closed
+Dec 11 18:16 : client: [1] opened from [::1]:36660
+Dec 11 18:16 : player: played "Bill Evans - Sunday At The Village Vanguard/02 - My Man's Gone Now.mp3"
+Dec 11 18:16 : client: [1] closed
+Dec 14 12:10 : client: [2] opened from [::1]:49474
+Dec 14 12:27 : player: played "Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3"
+Dec 14 12:32 : player: played "Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3"
+Dec 14 16:55 : client: [2] closed
+Dec 16 15:33 : zeroconf: No global port, disabling zeroconf
+Dec 16 23:05 : zeroconf: No global port, disabling zeroconf
+Dec 18 14:31 : zeroconf: No global port, disabling zeroconf

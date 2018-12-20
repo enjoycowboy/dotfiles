@@ -4,6 +4,9 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
+# set default desktop layout (default is tiling)
+# workspace_layout tabbed <stacking|tabbed>
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
 new_float normal
@@ -37,15 +40,27 @@ bindsym $mod+a exec --no-startup-id rofi -show run
 # launch categorized menu
 bindsym $mod+z exec --no-startup-id morc_menu
 
-## Sound ##
+################################################################################################
+## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
+################################################################################################
+
+#exec --no-startup-id volumeicon
+#bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 exec --no-startup-id pulseaudio -D
+#exec --no-startup-id pa-applet
 exec --no-startup-id pulseeffects -l p3 --gapplication-service
-exec --no-startup-id pa-applet
 bindsym $mod+Ctrl+m exec pavucontrol
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 bindsym $mod+Ctrl+p exec killall pulseaudio && killall pa-applet && pulseaudio -D && pa-applet
+
+################################################################################################
+
+# Screen brightness controls
+# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -56,11 +71,14 @@ bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
+# bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id maim -s ~/Pictures/ScreenClip/$(date +%s).png
 bindsym $mod+Shift+Print --release exec --no-startup-id screenclip.sh
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 bindsym $mod+m		exec urxvt -e neomutt
+
+# dfocus_follows_mouse no
 
 # change focus
 bindsym $mod+j focus left
@@ -109,12 +127,19 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# screenclip with maim
+#bindsym $mod+Print exec screenclip.sh
+
 # toggle sticky
 bindsym $mod+Shift+s sticky toggle
+
+# focus the parent container
+# bindsym $mod+a focus parent
 
 # move the currently focused window to the scratchpad
 bindsym $mod+Shift+minus move scratchpad
 
+# Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
 
@@ -123,6 +148,9 @@ bindsym $mod+Ctrl+Right workspace next
 bindsym $mod+Ctrl+Left workspace prev
 
 # Workspace names
+# to display names or symbols instead of plain workspace numbers you can use
+# something like: set $ws1 1:mail
+#                 set $ws2 2:
 set $ws1 one
 set $ws2 two
 set $ws3 three
@@ -131,6 +159,8 @@ set $ws5 five
 set $ws6 six
 set $ws7 seven
 set $ws8 eight
+
+#
 bindsym $mod+Tab	workspace back_and_forth
 
 # switch to workspace
@@ -163,14 +193,17 @@ bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
 bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
 
-# Focus on window activation
-focus_on_window_activation urgent
-
 # Workspace gaps
 workspace $ws3 gaps inner 0
 workspace $ws3 gaps outer 0
 workspace $ws4 gaps inner 0
 workspace $ws4 gaps outer 0
+
+# Open applications on specific workspaces
+# assign [class="Thunderbird"] $ws1
+# assign [class="Pale moon"] $ws2
+# assign [class="Pcmanfm"] $ws3
+# assign [class="Skype"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -199,9 +232,6 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-for_window [class="mpv"] floating enable sticky
-for_window [class="Evolution-alarm-notify"] floating enable
-for_window [title="Reminders"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
@@ -218,11 +248,17 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Resize window (you can also use the mouse for that)
 bindsym $mod+Shift+n mode "resize"
 mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
         bindsym j resize shrink width 5 px or 5 ppt
         bindsym k resize grow height 5 px or 5 ppt
         bindsym l resize shrink height 5 px or 5 ppt
         bindsym semicolon resize grow width 5 px or 5 ppt
 
+        # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
@@ -245,9 +281,13 @@ bindsym $mod+9 exec --no-startup-id betterlockscreen -l dimblur
 exec_always --no-startup-id /home/rtmoran/.config/polybar/launch.sh
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+#exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
+# exec --no-startup-id clipit
+# exec --no-startup-id blueman-applet
+# exec_always --no-startup-id sbxkb
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id xinput --set-prop "SYNA2B31:00 06CB:7F8B Touchpad" "libinput Natural Scrolling Enabled" 1
@@ -257,41 +297,95 @@ exec_always --no-startup-id nitrogen --set-zoom-fill /usr/share/backgrounds/curr
 exec --no-startup-id redshift
 exec_always --no-startup-id xfce4-power-manager
 exec --no-startup-id nohup davmail .davmail.properties
+
 exec --no-startup-id nohup sleep 10 && gcsf mount ~/rt.moran0@gmail.com -s rtmoran &
+# exec --no-startup-id nohup gcsf-boot
+# exec --no-startup-id terminal -e sleep 10; gcsf-boot
+# exec_always --no-startup-id rclone mount gdrive: ~/gdrive
+# exec_always --no-startup-id rclone mount rtmoranPC: ~/WinPC
+
 exec --no-startup-id evolution on
 exec --no-startup-id calcurse-caldav --syncdb .calcurse/caldav/sync.db
 exec_always --no-startup-id pcmanfm -d
+
 exec --no-startup-id auto-screen-rotate.sh
 
-## Color ##
-set_from_resource $darkblack	   color0  #000000
-set_from_resource $black   	   color8  #000000
-set_from_resource $darkred	      color1  #000000
-set_from_resource $red		      color9  #000000
-set_from_resource $darkgreen	   color2  #000000
-set_from_resource $green	      color10 #000000
-set_from_resource $darkyellow	   color3  #000000
-set_from_resource $yellow	      color11 #000000
-set_from_resource $darkblue	   color4  #000000
-set_from_resource $blue		      color12 #000000
+# Color palette used for the terminal ( ~/.Xresources file )
+# Colors are gathered based on the documentation:
+# https://i3wm.org/docs/userguide.html#xresources
+# Change the variable name at the place you want to match the color
+# of your terminal like this:
+# [example]
+# If you want your bar to have the same background color as your
+# terminal background change the line 362 from:
+# background #14191D
+# to:
+# background $term_background
+# Same logic applied to everything else.
+
+
+set_from_resource $darkblack	color0  #000000
+set_from_resource $black	color8  #000000
+set_from_resource $darkred	color1  #000000
+set_from_resource $red		color9  #000000
+set_from_resource $darkgreen	color2  #000000
+set_from_resource $green	color10 #000000
+set_from_resource $darkyellow	color3  #000000
+set_from_resource $yellow	color11 #000000
+set_from_resource $darkblue	color4  #000000
+set_from_resource $blue		color12 #000000
 set_from_resource $darkmagenta	color5  #000000
-set_from_resource $magenta	      color13 #000000
-set_from_resource $darkcyan	   color6  #000000
-set_from_resource $cyan		      color14 #000000
-set_from_resource $darkwhite	   color7  #000000
-# If you come from bash you might have to change your $PATH.
-# If you come from bash you might have to change your $PATH.
-# If you come from bash you might have to change your $PATH.
-set_from_resource $white	      color15 #000000
-set $transparent		                    #00000000
+set_from_resource $magenta	color13 #000000
+set_from_resource $darkcyan	color6  #000000
+set_from_resource $cyan		color14 #000000
+set_from_resource $darkwhite	color7  #000000
+set_from_resource $white	color15 #000000
+set $transparent		#00000000
+
+
+# Start i3bar to display a workspace bar (plus the system information i3status if available)
+#bar {
+#	i3bar_command i3bar
+#	status_command i3status
+#	position bottom
+#	mode dock
+
+## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+#	tray_output primary
+#	tray_output eDP1
+
+#	bindsym button4 nop
+#	bindsym button5 nop
+#   font xft:URWGothic-Book 11
+#	strip_workspace_numbers yes
+#
+#    colors {
+#        background $darkblack
+#        statusline #ededed
+#        separator  #ffffff
+#
+#                      border  backgr. text
+#        focused_workspace  $blue $darkblue $darkblack
+#        active_workspace   $blue $blue $darkwhite
+#        inactive_workspace $darkblack $darkblack $white
+#        urgent_workspace   $darkblack  $darkblack $white
+#    }
+#}
+
+# hide/unhide i3status bar
+# bindsym $mod+m bar mode toggle
 
 # Theme colors
-#                          BORDER	   	BACKGROUND	TEXT		   INDICATOR      CHILD_BORDER
-client.focused		         $red		      $red		   $magenta	   $darkmagenta	$darkyellow
-client.unfocused           $transparent   $blue		   $white		$darkblue		$darkblack
-client.focused_inactive	   $transparent	$blue		   $white		$darkblue		$darkblack
-client.urgent		         $darkred	      $darkred	   $black		$darkred		   $darkred
-client.background          $black
+#                       BORDER		BACKGROUND	TEXT		INDICATOR   CHILD_BORDER
+client.focused		$red		$red		$magenta	$darkmagenta		$darkblue
+client.unfocused	$transparent	$blue		$white		$darkblue		$darkblack
+client.focused_inactive	$transparent	$blue		$white		$darkblue		$darkblack
+client.urgent		$darkred	$darkred	$black		$darkred		$darkred
+client.background $black
+
+#############################
+### settings for i3-gaps: ###
+#############################
 
 # Required for i3-gaps
 for_window [class="^.*"] border pixel 2
@@ -300,10 +394,58 @@ for_window [class="^.*"] border pixel 2
 gaps inner 15
 gaps outer 15
 
+# Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
+# gaps inner|outer current|all set|plus|minus <px>
+# gaps inner  all set 10
+# gaps outer all plus 5
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+# smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders on
 
+# Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
 bindsym $mod+Shift+t		gaps inner current set 15; gaps outer current set 15
+
+
+#set $mode_gaps Gaps: (o) outer, (i) inner
+#set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+#set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+#bindsym $mod+Shift+g mode "$mode_gaps"
+#
+#mode "$mode_gaps" {
+#        bindsym o      mode "$mode_gaps_outer"
+#        bindsym i      mode "$mode_gaps_inner"
+#        bindsym Return mode "default"
+#        bindsym Escape mode "default"
+#}
+#mode "$mode_gaps_inner" {
+#        bindsym plus  gaps inner current plus 5
+#        bindsym minus gaps inner current minus 5
+#        bindsym 0     gaps inner current set 0
+#
+#        bindsym Shift+plus  gaps inner all plus 5
+#        bindsym Shift+minus gaps inner all minus 5
+#        bindsym Shift+0     gaps inner all set 0
+#
+#        bindsym Return mode "default"
+#        bindsym Escape mode "default"
+#}
+#mode "$mode_gaps_outer" {
+#        bindsym plus  gaps outer current plus 5
+#        bindsym minus gaps outer current minus 5
+#        bindsym 0     gaps outer current set 0
+#
+#        bindsym Shift+plus  gaps outer all plus 5
+#        bindsym Shift+minus gaps outer all minus 5
+#        bindsym Shift+0     gaps outer all set 0
+#
+#        bindsym Return mode "default"
+#        bindsym Escape mode "default"
+#}
 
 # i3 exit binds
 bindsym $mod+0 mode "$mode_system"

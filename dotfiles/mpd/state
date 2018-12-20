@@ -1,0 +1,25 @@
+sw_volume: 100
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: stop
+current: 0
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Bill Evans - Sunday At The Village Vanguard/01 - Gloria's Step (take 2).mp3
+1:Bill Evans - Sunday At The Village Vanguard/02 - My Man's Gone Now.mp3
+2:Bill Evans - Sunday At The Village Vanguard/03 - Solar.mp3
+3:Bill Evans - Sunday At The Village Vanguard/04 - Alice in Wonderland (take 2).mp3
+4:Bill Evans - Sunday At The Village Vanguard/05 - All of You (take 2).mp3
+5:Bill Evans - Sunday At The Village Vanguard/06 - Jade Visions (take 2).mp3
+6:Bill Evans - Sunday At The Village Vanguard/07 - Gloria's Step (take 3).mp3
+7:Bill Evans - Sunday At The Village Vanguard/08 - Alice in Wonderland (take 1).mp3
+8:Bill Evans - Sunday At The Village Vanguard/09 - All of You (take 1).mp3
+9:Bill Evans - Sunday At The Village Vanguard/10 - All of You (take 3).mp3
+10:Bill Evans - Sunday At The Village Vanguard/11 - Jade Visions (take 1).mp3
+playlist_end
